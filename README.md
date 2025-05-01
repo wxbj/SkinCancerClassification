@@ -22,6 +22,8 @@ flask_test/
 ├── run.py                # 启动 Flask 应用主程序
 ├── requirements.txt      # Python依赖列表
 ├── LICENSE.txt           # 授权协议
+├── .gitattributes.txt    # 定义 Git 对文件的处理规则
+├── .gitignore.txt        # 指定哪些文件不被 Git 跟踪和提交
 └── README.md             # reademe文件
 ```
 
