@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>成功案例</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<!-- nav部分 -->
+<div class="nav index">
+    <div class="layui-container">
+        <!-- logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img style="height: 80px;width: 80px" src="../static/img/logo.png" alt="网络公司">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="diagnosis.html">自我诊断</a></li>
+                <li class="layui-nav-item"><a href="news.html">新闻动态</a></li>
+                <li class="layui-nav-item"><a href="case.html">成功案例</a></li>
+                <li class="layui-nav-item"><a href="support.html">医疗支持</a></li>
+                <li class="layui-nav-item"><a href="login.html">注册/登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- banner部分 -->
+<div class="banner case">
+    <div class="title">
+        <p>成功案例</p>
+        <p class="en">Successful Case</p>
+    </div>
+</div>
+<!-- main部分 -->
+<div class="main-case">
+    <div class="layui-container">
+        <div class="layui-row">
+            <div class="layui-inline content">
+                <div class="layui-inline case-img"><img src="../static/img/case1.png"
+                                                        style="width: 250px;height: 250px"></div>
+                <p class="lable">60岁大妈确诊皮肤癌</p>
+                <p>丁大妈，一个活泼好动的60岁老太太，最近，她发现自己胳膊上不仅晒出了斑，还多了一些小黑点。通过使用我们的诊断系统，发现是皮肤癌。</p>
+            </div>
+            <div class="layui-inline content even center">
+                <div class="layui-inline case-img"><img src="../static/img/case2.png"
+                                                        style="width: 250px;height: 250px"></div>
+                <p class="lable">湖北45岁女子查出癌症</p>
+                <p>她今年45岁，是武汉一家工厂的流水线工人，最近总觉得皮肤干燥、发痒，连护肤品都不管用了。经过我们系统诊断，结果出来后，李女士被确诊为皮肤癌</p>
+            </div>
+            <div class="layui-inline content">
+                <div class="layui-inline case-img"><img src="../static/img/case3.png"
+                                                        style="width: 250px;height: 250px"></div>
+                <p class="lable">58岁大妈查出皮肤癌</p>
+                <p>王大妈最近，发现手臂上出现了一些奇怪的斑点，时而发痒，时而疼痛，但她并没有放在心上。但是最终经过我们系统诊断确诊为皮肤癌。</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+    <div class="layui-container">
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>© 2024 贵州财经大学. 版权所有.</p>
+                <p>联系我们: <a href="mailto:weizhen20010616@163.com">weizhen20010616@163.com</a></p>
+                <ul>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">服务条款</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="../static/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.config({
+        base: '../static/js/'
+    }).use('firm');
+</script>
+</body>
+</html>

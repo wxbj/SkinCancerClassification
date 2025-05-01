@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>自我诊断</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="../static/css/diagnosis.css">
+</head>
+<body>
+<!-- nav部分 -->
+<div class="nav index">
+    <div class="layui-container">
+        <!-- logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img style="height: 80px;width: 80px" src="../static/img/logo.png" alt="网络公司">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="diagnosis.html">自我诊断</a></li>
+                <li class="layui-nav-item"><a href="news.html">新闻动态</a></li>
+                <li class="layui-nav-item"><a href="case.html">成功案例</a></li>
+                <li class="layui-nav-item"><a href="support.html">医疗支持</a></li>
+                <li class="layui-nav-item"><a href="login.html">注册/登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- banner部分 -->
+<div class="banner product">
+    <div class="title">
+        <p>自我诊断</p>
+        <p class="en">Self Diagnosis</p>
+    </div>
+</div>
+<!-- main部分 -->
+<div class="outer_diagnosis_container">
+    <div class="diagnosis_container">
+        <form id="userForm" action="/diagnosis_result.html" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="age">年龄:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="gender">性别:</label>
+                <select id="gender" name="gender">
+                    <option value="male">男</option>
+                    <option value="female">女</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob">出生年月:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <div class="form-group">
+                <label for="phone">电话号码:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="imageUpload">图片上传:</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            </div>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+    <div class="layui-container">
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>© 2024 贵州财经大学. 版权所有.</p>
+                <p>联系我们: <a href="mailto:weizhen20010616@163.com">weizhen20010616@163.com</a></p>
+                <ul>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">服务条款</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="../static/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.config({
+        base: '../static/js/'
+    }).use('firm');
+</script>
+
+</body>
+</html>

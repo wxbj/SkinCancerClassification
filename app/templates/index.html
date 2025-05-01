@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<!-- nav部分 -->
+<div class="nav index">
+    <div class="layui-container">
+        <!-- logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img style="height: 80px;width: 80px" src="../static/img/logo.png" alt="网络公司">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav">
+                <li class="layui-nav-item"><a href="diagnosis.html">自我诊断</a></li>
+                <li class="layui-nav-item"><a href="news.html">新闻动态</a></li>
+                <li class="layui-nav-item"><a href="case.html">成功案例</a></li>
+                <li class="layui-nav-item"><a href="support.html">医疗支持</a></li>
+                <li class="layui-nav-item"><a href="login.html">注册/登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- banner部分 -->
+<div>
+    <div class="layui-carousel" id="banner">
+        <div carousel-item>
+            <div>
+                <img src="../static/img/banner1.jpg">
+                <div class="panel">
+                    <p class="title" style="font-size:50px;">图计健康</p>
+                    <div style="font-size:20px;">致力于成为"国民首席皮肤健康管家"</div>
+                </div>
+            </div>
+            <div>
+                <img src="../static/img/banner2.jpg">
+                <div class="panel">
+                    <div style="font-size:30px;">以深度学习为核心，医疗服务为抓手，数据挖掘为驱动的健康管理平台</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- main部分 -->
+<div class="main-product">
+    <div class="layui-container">
+        <p class="title">为客户打造完美的专业服务</p>
+        <div class="layui-row layui-col-space25">
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="content">
+                    <div><img src="../static/img/Big_icon1.png"></div>
+                    <div>
+                        <p class="label">高精密性和可靠性</p>
+                        <p>采用贝叶斯深度学习或贝叶斯神经网络技术，并经过大规模数据的训练和验证，以确保在皮肤癌诊断中具备高度准确的
+                            能力。</p>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3 ">
+                <div class="content">
+                    <div><img src="../static/img/Big_icon2.png"></div>
+                    <div>
+                        <p class="label">高效率性</p>
+                        <p>具备快速处理、分析医学影像数据并迅速给出诊断结果。有助于缩短患者等待时间，加快治疗和康复过程，提高医疗机
+                            构的工作效率。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3 ">
+                <div class="content">
+                    <div><img src="../static/img/Big_icon3.png"></div>
+                    <div>
+                        <p class="label">可扩展性和定制化</p>
+                        <p>能够根据不同医疗机构的需求进行定制配置。不论是规模较小的诊所还是规模庞大的医院，都能提供适合其规模和需求
+                            的解决方案。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3 ">
+                <div class="content">
+                    <div><img src="../static/img/Big_icon4.png"></div>
+                    <div>
+                        <p class="label">数据安全和隐私保护</p>
+                        <p>我们高度重视客户数据的安全与隐私防护，严格遵循相关法律法规及标准，全力保障数据传输与存储环节的安全无虞。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-service">
+    <div class="layui-container">
+        <p class="title">新型医疗影像智能诊断系统</p>
+        <div class="layui-row layui-col-space25 layui-col-space80">
+            <div class="layui-col-sm6">
+                <div class="content">
+                    <div class="content-left"><img src="../static/img/home_img1.jpg"></div>
+                    <div class="content-right">
+                        <p class="label">贝叶斯神经网络模型</p>
+                        <span></span>
+                        <p>贝叶斯神经网络模型不仅能够输出预测结果，还能够输出模型的置信度和不确定性信息。在医学影像数据处理中，贝叶
+                            斯神经网络模型可以通过对样本数据的学习和推断，自适应地调整网络结构和参数，从而实现更加准确和可靠的分类
+                            和分割效果。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6">
+                <div class="content">
+                    <div class="content-left"><img src="../static/img/home_img2.jpg"></div>
+                    <div class="content-right">
+                        <p class="label">智能处理医疗数据缺失</p>
+                        <span></span>
+                        <p>在医学影像数据处理中，由于人体结构的复杂性和多样性，常常存在着一些缺失或不完整的数据。传统的机器学习算法
+                            很难处理这些数据，而贝叶斯深度学习技术可以通过贝叶斯方法来推断缺失数据的概率分布，从而实现对缺失数据的
+                            补充和预测。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6">
+                <div class="content">
+                    <div class="content-left"><img src="../static/img/home_img3.jpg"></div>
+                    <div class="content-right">
+                        <p class="label">智能降噪医疗影像数据</p>
+                        <span></span>
+                        <p>在医学影像数据处理中，存在着各种不同类型的噪声，如伪影、运动伪影等。这些噪声会严重影响医生的诊断结果，因
+                            此需要采用一些特殊的算法来处理。贝叶斯深度学习技术可以通过对噪声数据的分布进行建模，从而实现对噪声数据
+                            的消除和降噪。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6">
+                <div class="content">
+                    <div class="content-left"><img src="../static/img/home_img4.jpg"></div>
+                    <div class="content-right">
+                        <p class="label">智能优化诊断系统的鲁棒性</p>
+                        <span></span>
+                        <p>由于人体结构的多样性和变化性，同一个疾病可能具有多种不同的表现形式，因此模型需要具备较强的适应性和泛化能
+                            力。贝叶斯深度学习技术可以通过引入先验知识和正则化约束等方法，提高模型的稳定性和鲁棒性，从而实现对多样
+                            化数据的准确处理和分析。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+    <div class="layui-container">
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>© 2024 贵州财经大学. 版权所有.</p>
+                <p>联系我们: <a href="mailto:weizhen20010616@163.com">weizhen20010616@163.com</a></p>
+                <ul>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">服务条款</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="../static/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '../static/js/'
+    }).use('firm');
+</script>
+</body>
+</html>

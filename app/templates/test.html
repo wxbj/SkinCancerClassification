@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>皮肤癌诊断</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <h1>皮肤癌诊断系统</h1>
+    <input type="file" id="imageUpload" accept="image/*">
+    <br>
+    <img id="uploadedImage" src="" alt="上传的图片" style="display:none;">
+    <p class="result" id="predictionResult" style="display:none;"></p>
+
+    <script>
+        document.getElementById('imageUpload').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const imageElement = document.getElementById('uploadedImage');
+                imageElement.src = event.target.result;
+                imageElement.style.display = 'block';
+                predictSkinCancer(event.target.result);
+            };
+            reader.readAsDataURL(file);
+        });
+
+        function predictSkinCancer(imageData) {
+            fetch('/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ image: imageData })
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultElement = document.getElementById('predictionResult');
+                resultElement.style.display = 'block';
+                resultElement.textContent = data.prediction ? "可能是皮肤癌" : "正常";
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <title>新闻动态</title>
+    <link rel="stylesheet" href="../static/layui/css/layui.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<!-- nav部分 -->
+<div class="nav index">
+    <div class="layui-container">
+        <!-- logo -->
+        <div class="nav-logo">
+            <a href="index.html">
+                <img style="height: 80px;width: 80px" src="../static/img/logo.png" alt="网络公司">
+            </a>
+        </div>
+        <div class="nav-list">
+            <button>
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="layui-nav" lay-filter="">
+                <li class="layui-nav-item"><a href="diagnosis.html">自我诊断</a></li>
+                <li class="layui-nav-item"><a href="news.html">新闻动态</a></li>
+                <li class="layui-nav-item"><a href="case.html">成功案例</a></li>
+                <li class="layui-nav-item"><a href="support.html">医疗支持</a></li>
+                <li class="layui-nav-item"><a href="login.html">注册/登录</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- banner部分 -->
+<div class="banner news">
+    <div class="title">
+        <p>实时新闻</p>
+        <p class="en">Real-time News</p>
+    </div>
+</div>
+<!-- main -->
+<div class="main-news">
+    <div class="layui-container">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-lg6 content">
+                <div>
+                    <div class="news-img"><a href="newsDetail.html"><img src="../static/img/news_img1.jpg"></a></div>
+                    <div class="news-panel">
+                        <strong><a href="newsDetail.html">黑色素瘤治疗取得新进展</a></strong>
+                        <p class="detail"><span>在2024年9月25日至29日召开的第27届全国临床肿瘤学大会暨2024年CSCO学术年会上，君
+                            实生物自主研发的抗PD-1单抗药物特瑞普利单抗（商品名：拓益®）针对晚期黑色素瘤的Ⅲ期注册临床研究数据进行
+                            了首次分享，研究取得了可喜的成果。</span>
+                            <a href="newsDetail.html">[详细]</a></p>
+                        <p class="read-push">阅读 <span>120</span>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2024-09-29</span></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-lg6 content">
+                <div>
+                    <div class="news-img"><a href="newsDetail.html"><img src="../static/img/news_img2.jpg"></a></div>
+                    <div class="news-panel">
+                        <strong><a href="newsDetail.html">黑色素瘤专家关于如何战胜它的最佳建议</a></strong>
+                        <p class="detail"><span>著名皮肤癌专家 Steven Q. Wang 医学博士在其最新著作《战胜黑色素瘤》中带领患者了解黑色素瘤诊断的每个阶段。</span>
+                            <a href="newsDetail.html">[详细]</a></p>
+                        <p class="read-push">阅读 <span>110</span>&nbsp;&nbsp;&nbsp;&nbsp;发布时间：<span>2024-08-15</span></p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- footer部分 -->
+<div class="footer">
+    <div class="layui-container">
+        <footer class="footer-container">
+            <div class="footer-content">
+                <p>© 2024 贵州财经大学. 版权所有.</p>
+                <p>联系我们: <a href="mailto:weizhen20010616@163.com">weizhen20010616@163.com</a></p>
+                <ul>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">服务条款</a></li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+</div>
+<script src="../static/layui/layui.js"></script>
+<!--[if lt IE 9]>
+  <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+  <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script>
+    layui.config({
+        base: '../static/js/'
+    }).use('firm');
+</script>
+
+</body>
+</html>
