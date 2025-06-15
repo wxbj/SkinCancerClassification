@@ -1,4 +1,4 @@
-import os
+dimport os
 import pandas as pd
 import torch
 import torch.utils.data as data
@@ -6,7 +6,7 @@ from PIL import Image
 from glob import glob
 from sklearn.model_selection import train_test_split
 
-base_skin_dir = os.path.join('', 'data') #base_skin_dir = data
+base_skin_dir = os.path.join('backend', 'data') #base_skin_dir = data
 imageid_path_dict = {os.path.splitext(os.path.basename(x))[0]: x
                      for x in glob(os.path.join(base_skin_dir, '*', '*.jpg'))}
 #imageid_path_dict = {'ISIC_0024306': 'data/HAM10000_images_part_1/ISIC_0024306.jpg'}
