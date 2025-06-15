@@ -43,7 +43,7 @@ pip install -r requirements.txt
 ### 3️⃣ 模型训练
 
 ```bash
-python train.py
+python -m  backend.train
 ```
 
 ### 4️⃣ 启动 Web 服务
